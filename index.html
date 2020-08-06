@@ -3,9 +3,24 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style/style.css" />
       <title>BMI Calculator</title>
    </head>
    <body>
-      <h1>hello github i love you</h1>
+      <main>
+         <div class="main-screen">
+            <h1>Is your weight <span>perfect</span> ?</h1>
+            <div class="inputs">
+               <div>
+                  <label for="height-input">your <span>height:</span></label>
+                  <input id="height-input" type="number" min="0" max="270" />
+               </div>
+               <div>
+                  <label for="weight-input">your <span>weight:</span></label>
+                  <input id="weight-input" type="text" min="0" max="200" />
+               </div>
+            </div>
+         </div>
+      </main>
    </body>
 </html>
