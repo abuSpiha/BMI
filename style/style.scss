@@ -14,6 +14,11 @@ $color4: #59405c;
    justify-content: center;
 }
 
+::placeholder {
+   font-size: 17px;
+   color: #fff;
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -24,37 +29,64 @@ main {
    height: 100vh;
    @include flexCenter();
 
+   /*title*/
    h1 {
       font-size: 40px;
       color: $color3;
    }
 
+   /*title span*/
    span {
       color: $color1;
    }
 
    .inputs {
       @include flexCenter();
-      height: 250px;
+      height: 270px;
 
       input {
          height: 50px;
-         width: 200px;
-         padding: 0 10px 0 40px;
+         width: 210px;
+         padding: 3px 10px;
          font-size: 25px;
          background-color: $color3;
          color: #fff;
          border: 3px solid $color1;
          border-radius: 5px;
-         margin-top: 20px;
+         margin: 10px 10px;
          outline: none;
+         text-align: center;
       }
 
       label {
          color: $color4;
+         font-size: 18px;
          span {
             color: $color2;
             font-weight: bold;
+         }
+      }
+   }
+
+   .button {
+      height: 50px;
+      width: 120px;
+      background-color: $color1;
+      border-radius: 2px;
+
+      button {
+         height: 100%;
+         width: 100%;
+         margin: 7px 7px;
+         background-color: $color2;
+         color: #fff;
+         font-size: 19px;
+         border: none;
+         border-radius: 2px;
+         transition: all 0.2s ease-in;
+
+         &:hover {
+            margin: 0;
          }
       }
    }

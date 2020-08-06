@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
 /*colors*/
 /*mixins*/
+::-webkit-input-placeholder {
+  font-size: 17px;
+  color: #fff;
+}
+:-ms-input-placeholder {
+  font-size: 17px;
+  color: #fff;
+}
+::-ms-input-placeholder {
+  font-size: 17px;
+  color: #fff;
+}
+::placeholder {
+  font-size: 17px;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +39,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /*title*/
+  /*title span*/
 }
 
 main h1 {
@@ -47,28 +66,54 @@ main .inputs {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 250px;
+  height: 270px;
 }
 
 main .inputs input {
   height: 50px;
-  width: 200px;
-  padding: 0 10px 0 40px;
+  width: 210px;
+  padding: 3px 10px;
   font-size: 25px;
   background-color: #3c2c3e;
   color: #fff;
   border: 3px solid #ed6663;
   border-radius: 5px;
-  margin-top: 20px;
+  margin: 10px 10px;
   outline: none;
+  text-align: center;
 }
 
 main .inputs label {
   color: #59405c;
+  font-size: 18px;
 }
 
 main .inputs label span {
   color: #b52b65;
   font-weight: bold;
+}
+
+main .button {
+  height: 50px;
+  width: 120px;
+  background-color: #ed6663;
+  border-radius: 2px;
+}
+
+main .button button {
+  height: 100%;
+  width: 100%;
+  margin: 7px 7px;
+  background-color: #b52b65;
+  color: #fff;
+  font-size: 19px;
+  border: none;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+main .button button:hover {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
