@@ -12,6 +12,7 @@ $color4: #59405c;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   text-align: center;
 }
 
 ::placeholder {
@@ -26,8 +27,37 @@ $color4: #59405c;
 }
 
 main {
-   height: 100vh;
+   height: 200vh;
    @include flexCenter();
+
+   .main-screen {
+      @include flexCenter();
+      height: 100vh;
+   }
+
+   .r-screen {
+      @include flexCenter();
+      height: 100vh;
+
+      .result-text {
+         padding-top: 10px;
+         font-size: 30px;
+
+         span {
+            font-size: 40px;
+         }
+      }
+
+      .button {
+         margin-top: 50px;
+      }
+
+      ul {
+         margin-top: 70px;
+         text-align: left;
+         align-self: flex-end;
+      }
+   }
 
    /*title*/
    h1 {
@@ -40,9 +70,10 @@ main {
       color: $color1;
    }
 
+   /*input div*/
    .inputs {
       @include flexCenter();
-      height: 270px;
+      height: 300px;
 
       input {
          height: 50px;
@@ -59,6 +90,7 @@ main {
       }
 
       label {
+         margin-top: 10px;
          color: $color4;
          font-size: 18px;
          span {
@@ -73,17 +105,17 @@ main {
       width: 120px;
       background-color: $color1;
       border-radius: 2px;
-
       button {
          height: 100%;
          width: 100%;
-         margin: 7px 7px;
+         margin: 5px 5px;
          background-color: $color2;
          color: #fff;
          font-size: 19px;
          border: none;
          border-radius: 2px;
          transition: all 0.2s ease-in;
+         cursor: pointer;
 
          &:hover {
             margin: 0;

@@ -11,31 +11,54 @@
          <div class="main-screen">
             <h1>Is your weight <span>perfect</span> ?</h1>
             <div class="inputs">
-               <div>
-                  <label for="height-input">your <span>height:</span></label>
-                  <input
-                     id="height-input"
-                     type="number"
-                     min="0"
-                     max="270"
-                     placeholder="Put your height in cm"
-                  />
-               </div>
-               <div>
-                  <label for="weight-input">your <span>weight:</span></label>
-                  <input
-                     id="weight-input"
-                     type="number"
-                     min="0"
-                     max="200"
-                     placeholder="Put your weight in Kg"
-                  />
-               </div>
+               <label for="height-input">your <span>height</span></label>
+               <input
+                  id="height-input"
+                  type="number"
+                  min="0"
+                  max="270"
+                  placeholder="Put your height in cm"
+               />
+               <label for="weight-input">your <span>weight</span></label>
+               <input
+                  id="weight-input"
+                  type="number"
+                  min="0"
+                  max="200"
+                  placeholder="Put your weight in Kg"
+               />
             </div>
             <div class="button">
-               <button>Calculat</button>
+               <button id="calc">Calculate</button>
             </div>
          </div>
+
+         <div class="r-screen">
+            <div class="result">
+               <h1 class="result-bmi">
+                  your BMI is <span id="bmi-r">18.5</span>kg/m2
+               </h1>
+               <h1 class="result-text">
+                  This is considered <span id="weight-state">good</span>
+               </h1>
+            </div>
+            <div class="button">
+               <button id="try-agine">Try agine</button>
+            </div>
+
+            <ul>
+               <li>
+                  the best weight to your hight is between
+                  <span id="best-weight">51kg-65kg</span>.
+               </li>
+               <li>
+                  you have get more <span id="more-less">3kg</span>to be a
+                  perfect.
+               </li>
+            </ul>
+         </div>
       </main>
+
+      <script src="main.js"></script>
    </body>
 </html>

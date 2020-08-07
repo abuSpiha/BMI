@@ -25,7 +25,7 @@
 }
 
 main {
-  height: 100vh;
+  height: 200vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,8 +39,66 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   /*title*/
   /*title span*/
+  /*input div*/
+}
+
+main .main-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+main .r-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+main .r-screen .result-text {
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+main .r-screen .result-text span {
+  font-size: 40px;
+}
+
+main .r-screen .button {
+  margin-top: 50px;
+}
+
+main .r-screen ul {
+  margin-top: 70px;
+  text-align: left;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 main h1 {
@@ -66,7 +124,8 @@ main .inputs {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 270px;
+  text-align: center;
+  height: 300px;
 }
 
 main .inputs input {
@@ -84,6 +143,7 @@ main .inputs input {
 }
 
 main .inputs label {
+  margin-top: 10px;
   color: #59405c;
   font-size: 18px;
 }
@@ -103,7 +163,7 @@ main .button {
 main .button button {
   height: 100%;
   width: 100%;
-  margin: 7px 7px;
+  margin: 5px 5px;
   background-color: #b52b65;
   color: #fff;
   font-size: 19px;
@@ -111,6 +171,7 @@ main .button button {
   border-radius: 2px;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 
 main .button button:hover {
