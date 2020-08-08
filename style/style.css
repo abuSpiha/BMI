@@ -97,8 +97,8 @@ main .r-screen .button {
 main .r-screen ul {
   margin-top: 70px;
   text-align: left;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  font-size: 19px;
+  color: #59405c;
 }
 
 main h1 {
