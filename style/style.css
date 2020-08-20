@@ -1,68 +1,23 @@
+@charset "UTF-8";
+/*import the font*/
 @import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
-/*colors*/
+/*variables*/
 /*mixins*/
-::-webkit-input-placeholder {
-  font-size: 17px;
-  color: #fff;
-}
-:-ms-input-placeholder {
-  font-size: 17px;
-  color: #fff;
-}
-::-ms-input-placeholder {
-  font-size: 17px;
-  color: #fff;
-}
-::placeholder {
-  font-size: 17px;
-  color: #fff;
-}
-
+/*** style 🎨 ***/
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Tajawal", sans-serif;
 }
 
 main {
-  height: 200vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  /*title*/
-  /*title span*/
-  /*input div*/
-}
-
-main .main-screen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
   height: 100vh;
+  overflow: hidden;
 }
 
+main .main-screen,
 main .r-screen {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,31 +33,13 @@ main .r-screen {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  height: 100vh;
-}
-
-main .r-screen .result-text {
-  padding-top: 10px;
-  font-size: 30px;
-}
-
-main .r-screen .result-text span {
-  font-size: 40px;
-}
-
-main .r-screen .button {
-  margin-top: 50px;
-}
-
-main .r-screen ul {
-  margin-top: 70px;
-  text-align: left;
-  font-size: 19px;
-  color: #59405c;
+  height: 100%;
+  -webkit-transition: all ease-out 0.7s;
+  transition: all ease-out 0.7s;
 }
 
 main h1 {
-  font-size: 40px;
+  font-size: 2.5em;
   color: #3c2c3e;
 }
 
@@ -110,7 +47,32 @@ main span {
   color: #ed6663;
 }
 
-main .inputs {
+main .button {
+  height: 50px;
+  width: 140px;
+  background-color: #ed6663;
+  border-radius: 2px;
+}
+
+main .button button {
+  height: 100%;
+  width: 100%;
+  margin: 6px 6px;
+  background-color: #b52b65;
+  color: #fff;
+  font-size: 19px;
+  border: none;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+main .button button:hover {
+  margin: 0;
+}
+
+main .main-screen .inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,56 +87,77 @@ main .inputs {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  height: 300px;
+  margin: 45px;
+  width: 100%;
 }
 
-main .inputs input {
-  height: 50px;
-  width: 210px;
-  padding: 3px 10px;
-  font-size: 25px;
+main .main-screen .inputs input {
+  height: 80px;
+  width: 75%;
+  max-width: 275px;
+  padding: 5px 10px;
+  font-size: 1.5em;
   background-color: #3c2c3e;
   color: #fff;
-  border: 3px solid #ed6663;
-  border-radius: 5px;
-  margin: 10px 10px;
-  outline: none;
+  border: 5px solid #ed6663;
+  border-radius: 10px;
+  margin-top: 10px;
   text-align: center;
 }
 
-main .inputs label {
-  margin-top: 10px;
-  color: #59405c;
-  font-size: 18px;
+main .main-screen .inputs input::-webkit-input-placeholder {
+  font-size: 0.7em;
+  color: #fff;
 }
 
-main .inputs label span {
+main .main-screen .inputs input:-ms-input-placeholder {
+  font-size: 0.7em;
+  color: #fff;
+}
+
+main .main-screen .inputs input::-ms-input-placeholder {
+  font-size: 0.7em;
+  color: #fff;
+}
+
+main .main-screen .inputs input::placeholder {
+  font-size: 0.7em;
+  color: #fff;
+}
+
+main .main-screen .inputs label {
+  margin-top: 25px;
+  color: #59405c;
+  font-size: 1.2em;
+}
+
+main .main-screen .inputs label span {
   color: #b52b65;
   font-weight: bold;
 }
 
-main .button {
-  height: 50px;
-  width: 120px;
-  background-color: #ed6663;
-  border-radius: 2px;
+main .r-screen {
+  padding: 100px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-main .button button {
-  height: 100%;
-  width: 100%;
-  margin: 5px 5px;
-  background-color: #b52b65;
-  color: #fff;
-  font-size: 19px;
-  border: none;
-  border-radius: 2px;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  cursor: pointer;
+main .r-screen .result-text {
+  padding-top: 0.75em;
+  font-size: 1.5em;
 }
 
-main .button button:hover {
-  margin: 0;
+main .r-screen .result-text span {
+  font-size: 1.5em;
+}
+
+main .r-screen ul {
+  text-align: left;
+  font-size: 1.2em;
+  color: #59405c;
+}
+
+main .r-screen ul li {
+  padding: 0.5em 0;
 }
 /*# sourceMappingURL=style.css.map */
